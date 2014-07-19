@@ -35,6 +35,10 @@
                 <li>
                   <%= link_to 'My Artist Profile', artist_path(current_user.artist.id) %>
                 </li>
+              <% else %>
+                <li>
+                  <%= link_to 'Create Artist Profile', new_artist_path %>
+                </li>
               <% end %>
       
               <li>
