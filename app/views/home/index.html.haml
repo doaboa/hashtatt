@@ -1,7 +1,9 @@
 .login_container
   .login_background
     .row
-      .large-6.columns
+      .tagline.small-11.small-centered.medium-10.medium-centered.large-7.large-centered.columns
+        %h1 The first online community dedicated solely to ink.  Finally.
+      .small-12.large-6.columns
         .sign_up
           %h2 Sign up.
           - if devise_mapping.omniauthable?
@@ -19,7 +21,7 @@
                   = f.input :password, :required => true
                   = f.input :password_confirmation, :required => true
                 = f.button :submit, 'Sign Up', :class => 'small button'
-      .large-6.columns
+      .small-12.large-6.columns
         .log_in
           %h2 Log in.
           - if devise_mapping.omniauthable?
