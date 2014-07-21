@@ -13,7 +13,7 @@
 }
 
 
-
+/* Move elements above bg overlay pattern */
 .tagline, .sign_up, .log_in, .top-bar, .or {
   position: relative;
   z-index: 2;
@@ -25,13 +25,14 @@
 
 .row {
   margin-bottom:0;
-  margin-top:-60px;
+  margin-top:-115px;
 }
 
 .tagline h1 {
   text-align: center;
   color: white;
-  margin: 1.5em 0.1em 1em 0.1em;
+  background-color: #107360;
+  margin: 3em 0.1em 1em 0.1em;
 }
 
 /* For bg containing two forms */
@@ -43,8 +44,7 @@
   margin: 2em auto;
 }
 
-.sign_up {
-  /*background: rgba(0,0,0,.5);*/
+.sign_up, .log_in {
   border-radius: 5px;
   color: white;
   padding: 1em;
@@ -53,41 +53,38 @@
   width: 25em; height: 500px;
   h2 {
     color:white;
+    padding-bottom: 0.75em;
   }
   label,abbr {
     color:white;
   }
-
+  hr { 
+    width: 90%;
+    margin-left: 5%;
+    /* HIDING HORIZONTAL RULE */
+    display: none;
+  }
 }
 
-.log_in {
-  color: white;
-  /*background: rgba(0,0,0,.5);*/
-  border-radius: 5px;
-  padding: 1em;
-  margin: 2em auto;
-  width: 25em; height: 500px;
-  h2 {
-    color:white;
-  }
-  label {
-    color:white;
-  }
-
+.form-vertical {
+  padding: 0 20px 0 20px;
 }
+
+
 
 .login_background {
-  background:url(mban.jpg) no-repeat center center fixed; 
+  background:url(newbg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
+/* Pattern overlay for bg */
 .bg_pattern {
   background-image: url(bg_pattern.png);
   position: fixed; 
-  opacity: 0.8; 
+  opacity: 0.9; 
   left: 0px; 
   top: 0px; 
   width: 100%; 
@@ -100,8 +97,14 @@
 }
 
 .footer {
-  height: 200px;
+  height: 40px;
   clear: both !important;
+  text-align: center;
+  background-color: rgba(0,0,0,.5);
+  p {
+    color: white;
+    padding-top: 10px;
+  }
 }
 
 .active {
