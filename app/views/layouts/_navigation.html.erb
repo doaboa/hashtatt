@@ -31,6 +31,9 @@
 
             <ul class="dropdown">
 
+              <li>
+                <%= link_to 'My User Profile', user_path(current_user) %>
+              </li>
               <% if current_user.artist %>
                 <li>
                   <%= link_to 'My Artist Profile', artist_path(current_user.artist.id) %>
