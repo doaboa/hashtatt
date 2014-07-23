@@ -8,23 +8,21 @@
         .small-12.large-5.columns
           .sign_up
             %h2 Sign up.
-            / - if devise_mapping.omniauthable?
-            /   - User.omniauth_providers.each do |provider|
-            /     = link_to "Sign Up with #{provider.to_s.titleize}", omniauth_authorize_path(resource_name, provider), :class => 'small button twitter_btn'
-            /     %br/
-            / %br
-            /   %hr
-            
-            / reindent the following section TWICE before uncommented section above will work
-            = simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:class => 'form-vertical' }) do |f|
-              = f.error_notification
-              = display_base_errors resource
-              = f.input :username, :label => "Username", :autofocus => true
-              = f.input :email, :required => true
-              - if f.object.password_required?
-                = f.input :password, :required => true
-                = f.input :password_confirmation, :required => true
-              = f.button :submit, 'Sign Up', :class => 'small button'
+            - if devise_mapping.omniauthable?
+              - User.omniauth_providers.each do |provider|
+                = link_to "Sign Up with #{provider.to_s.titleize}", omniauth_authorize_path(resource_name, provider), :class => 'small button twitter_btn'
+                %br/
+            %br
+              %hr
+                = simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:class => 'form-vertical' }) do |f|
+                  = f.error_notification
+                  = display_base_errors resource
+                  = f.input :username, :label => "Username", :autofocus => true
+                  = f.input :email, :required => true
+                  - if f.object.password_required?
+                    = f.input :password, :required => true
+                    = f.input :password_confirmation, :required => true
+                  = f.button :submit, 'Sign Up', :class => 'small button'
         .or.large-2.columns
           %hr
           %h4 OR
