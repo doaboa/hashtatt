@@ -48,3 +48,4 @@ $(function(){
   // ).bind "ajax:error", (e, xhr, status, error) ->
   //   $("#new_post").append "<p>ERROR</p>"
 });    
+$(function(){ $(document).foundation(); });
