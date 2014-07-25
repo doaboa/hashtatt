@@ -158,15 +158,18 @@
   h1 {
     display: inline;
     position: relative;
-    font: 200px Helvetica, Sans-Serif;
     letter-spacing: -5px;
     color: rgba(22, 160, 133,0.8); 
+    font: 200px Helvetica, Sans-Serif;
+    @media (max-width: 930px) { font: 150px Helvetica, Sans-Serif; }
+    @media (max-width: 680px) { font: 75px Helvetica, Sans-Serif; }
   }
 
 
   h1:after {
     content: "HASHTAT";
     position: absolute; left: 10px; top: 5px;
+    @media (max-width: 930px) { position: absolute; left: 7.5px; top: 3.75px; }
     color: rgba(46, 204, 113,0.5);   
   }
 
