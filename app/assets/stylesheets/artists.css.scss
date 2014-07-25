@@ -22,6 +22,7 @@
 }
 
 .artist_page {
+	margin-top: -2em;
 	font-size:1em;
 	background-image: url("http://maudlintales.files.wordpress.com/2012/04/the-tattooist.jpg");
 	background-size: 100% auto;
@@ -36,6 +37,8 @@
 	padding-left: 30px;
 	height: 200px;
 	width: 200px;
+	position: relative;
+	z-index: 2;
 }
 
 .username {

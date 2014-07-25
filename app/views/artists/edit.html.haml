@@ -18,9 +18,6 @@
     = f.input :tattoo_shop_url, :label => "Tattoo shop website"
 
   .field
-    = f.input :bio
-
-  .field
     = f.input :specialties
 
   .field
@@ -37,6 +34,12 @@
 
   .field
     = f.input :email
+
+  .field
+    = f.input :bio
+
+  - 8.times do
+    %br
 
   .form_actions
     = f.button :submit, "Next", class: 'button'

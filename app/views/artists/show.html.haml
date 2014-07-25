@@ -32,6 +32,9 @@
     - if @artist.specialties.present?
       %h3= "Specialties"
       %p= "#{@artist.specialties}"
+    - if @artist.user_id == current_user.id
+      %hr
+      = link_to "Edit your Page", edit_artist_path, class: 'button'
   .arttatshow.large-offset-1.large-7.columns
     %h2= "Tattoos"
     - if @artist.tattoos.length == 0
