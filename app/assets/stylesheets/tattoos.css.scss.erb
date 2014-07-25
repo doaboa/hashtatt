@@ -3,13 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 // $accentColor: #0e0e49;
 
-#photo_div{
-	width:40%;
-	margin-right:5%;
-	min-height:400px;
-
-}
-
 #comments {
 	padding-top:1em;
 	clear: both;
@@ -61,13 +54,10 @@
 
 }
 
-.blackandwhite {
+.blackandwhite, .color {
 	float:right;
 }
 
-.color {
-	float:right;
-}
 
 body {
   background-image: url('brickwall.png')
@@ -119,11 +109,22 @@ background-repeat: no-repeat;
 
 /*Tattoo Show Page*/
 
+#photo, #description {
+  margin-top: 2em;
+}
+
+#description {
+  text-align: right;
+  color: #a6a6a6;
+  margin-right: 2em;
+}
+
 #tattoo_info {
-  margin-top: 40px;
-  background-color:rgba(22,160,133,0.3);
+  margin-top: 7.25em;
+  background: rgba(0,0,0,0.9);
+  width: 103%;
+  margin-left: -1em;
   padding: 1em;
-  border-radius:10px;
   .title {
   	color:#2980b9;
   }
@@ -136,6 +137,14 @@ background-repeat: no-repeat;
   #count {
   	color:white;
   }
+}
+
+#underPhoto {
+  margin-top: 0.5em;
+}
+
+.edelete {
+  margin-top: 0.75em;
 }
 
 #tattoo_info:after { 
