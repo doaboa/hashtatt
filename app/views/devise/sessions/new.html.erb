@@ -1,7 +1,7 @@
 
 <div class= "log_in_left">
 	<h2>Welcome back!</h2>
-	<h4>Please re-confirm your password.</h4>
+	<h4>Please re-confirm your password (just once).</h4>
 	<br>
 	<!-- <%- if devise_mapping.omniauthable? %>
         <%- User.omniauth_providers.each do |provider| %>
@@ -14,7 +14,7 @@
 	  <!-- <%= f.input :email, :autofocus => true %> -->
 	  <%= f.input :password %>
 	  <!-- <%= f.input :remember_me, :as => :boolean if devise_mapping.rememberable? %> -->
-	  <%= f.button :submit, "Log in", :class => 'button' %>
+	  <%= f.button :submit, "Enter", :class => 'button' %>
 	<% end %>
 
 	<%- if devise_mapping.recoverable? && controller_name != 'passwords' %>
