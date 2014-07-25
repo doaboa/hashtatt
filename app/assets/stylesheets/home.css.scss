@@ -63,6 +63,11 @@
     /* HIDING HORIZONTAL RULE */
     display: none;
   }
+  .button { 
+    $bg-co: #107360;
+    background-color: $bg-co;
+    border-color: darken($bg-co, 10%); 
+  }
 }
 
 .form-vertical {
