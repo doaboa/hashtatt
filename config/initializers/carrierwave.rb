@@ -6,3 +6,8 @@ CarrierWave.configure do |config|
   }
   config.fog_directory = ENV['AS3_BUCKET_NAME']
 end
+
+AWS::S3::Base.establish_connection!(
+	aws_access_key_id: ENV['AS3_ACCESS_KEY'],
+    aws_secret_access_key: ENV['AS3_SECRET_ACCESS_KEY']
+	)
