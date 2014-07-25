@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 gem 'rails', '3.2.13'
-gem 'sunspot_rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.6'
@@ -33,7 +32,6 @@ gem 'will_paginate'
 gem 'best_in_place'
 gem 'wicked'
 gem 'awesome_print'
-gem 'sunspot_solr'
 gem 'progress_bar'
 
 group :production do
