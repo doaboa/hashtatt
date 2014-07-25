@@ -38,7 +38,6 @@
 /* For bg containing two forms */
 .forms_contain {
   background: rgba(0,0,0,.5);
-  border-radius: 15px;
   color: white;
   padding: 1em;
   margin: 2em auto;
@@ -189,6 +188,7 @@
     margin: 0 0 2em 0;
     position: relative;
 
+    transition: top 0.5s ease;
     -webkit-transition: top 0.5s ease-out; 
     -moz-transition: top 0.5s ease-out; 
     -o-transition: top 0.5s ease-out;
@@ -198,16 +198,18 @@
 
   p {
     font-size: 50px;
-    font-weight: 300; 
+    font-weight: 300;
     position: relative;
     text-transform: uppercase;
-
+    
+    transition: top 0.5s ease;
     -webkit-transition: top 0.5s ease; 
     -moz-transition: top 0.5s ease; 
     -o-transition: top 0.5s ease; 
   }
 
   p.bio {
+    transition: opacity 0.5s ease;
     font-size: 20px;
     text-transform: none;
     opacity: 0.0;
@@ -240,7 +242,7 @@
   h1 {
     display: inline;
     position: relative;
-    font: 100px Helvetica, Sans-Serif;
+    font: 98px Helvetica, Sans-Serif;
     letter-spacing: -5px;
     color: rgba(46, 204, 113,0.6); 
   }
