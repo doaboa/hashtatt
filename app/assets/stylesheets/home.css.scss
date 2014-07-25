@@ -3,13 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .login_container {
-  /*position:fixed;*/
   height:100%;
   width:100%;
   min-height:100%;
   height: auto !important;
   margin: 0 auto -4em;
   margin-top: 55px;
+  overflow-x: hidden;
 }
 
 
@@ -67,6 +67,15 @@
     background-color: $bg-co;
     border-color: darken($bg-co, 10%); 
   }
+  @media (max-width: 755px) {
+    input {
+      width: 75%;
+    }
+    #user_remember_me {
+        width: 10%;
+      }
+  }
+  
 }
 
 .form-vertical {
