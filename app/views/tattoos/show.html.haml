@@ -10,11 +10,11 @@
       = like_button(@tattoo, current_user)
       .edelete
         = link_to 'back', tattoos_path
-        / - if @user == current_user.id
-        %span //
-        = link_to 'edit', edit_tattoo_path(@tattoo) 
-        %span //
-        = link_to 'delete', @tattoo, method: :delete, data: { confirm: 'Are you sure?' } |
+        - if @user == current_user.id
+          %span //
+          = link_to 'edit', edit_tattoo_path(@tattoo) 
+          %span //
+          = link_to 'delete', @tattoo, method: :delete, data: { confirm: 'Are you sure?' } |
   #description.small-12.large-3.columns
 
     - if @tattoo.artist
