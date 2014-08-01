@@ -78,20 +78,23 @@ background-repeat: no-repeat;
 }
 
 .masonry-brick { 
-  width: 380px; 
+  width: 380px;
+  @media (max-width: 460px) {width: 300px;} 
   margin: 10px;
-  //weird gutter to right that needs to be fixed
   float: left; 
   z-index:1; }
 
 #masonryContainer { 
   background-image: url('brickwall.png');
   position:relative;
-  top: 500px;
-  width: 102%;
+  top: 30em;
+  @media (max-width: 600px) {top:18em;}
+  @media (min-width: 601px) and (max-width: 1000px) {top:22em;}
+  width: 108%;
   bottom:0;
   scroll:auto;
   left: -15px;
+  @media (max-width: 460px) {padding-left: 2%;}
   padding-left: 7%;
 } 
 .masonry-brick a {
